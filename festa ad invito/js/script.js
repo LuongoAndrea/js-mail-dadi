@@ -1,6 +1,6 @@
 const listaInvitati = ["andrea@gmail.com", "francesco@gmail.com", "pippo@gmail.com"];
 
-const element = document.getElementById("btn");
+const element = document.getElementById("btn-mail");
 element.addEventListener('click', function(){
         let email = document.getElementById("email").value;
         console.log(email);
