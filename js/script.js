@@ -21,3 +21,23 @@ element.addEventListener('click', function(){
         }
     }
 )
+
+const prova = document.getElementById("number-btn");
+prova.addEventListener('click', function(){
+        let number = document.getElementById("number").value;
+        console.log(number);
+        let numberGenerate = Math.floor(Math.random() * 6) + 1;
+        console.log(numberGenerate);
+        let indovinato = false;
+        if(number == numberGenerate){
+            indovinato = true
+        }
+
+        if(indovinato == true){
+            document.getElementById("messaggio-vittoria").innerHTML = "ottimo hai indovinato";
+        }
+        else{
+            document.getElementById("messaggio-vittoria").innerHTML = "mi spiace non hai indovinato";
+        }
+    }
+)
